@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    max-height: 100%;
+}
+.navigation-bar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff; 
+    padding: 0 90px;
+}
+.nav-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+.nav-left a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+.nav-center {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  height: 60px; 
+  padding: 0 10px;
+}
+
+.nav-center nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem; 
+  padding: 0;
+  margin: 0;
+}
+
+.nav-center nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: text-decoration 0.9s ease;
+}
+.nav-center nav ul li a:hover {
+  color: #007bff; 
+  border-bottom: 2px solid #007bff;
+}
+.cta-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    padding: 20px;
+    border-radius: 15px;
+    color: #44BEFF;
+    background-color: #EAF7FF;
+    border: none;
+    font-weight: bold;
+}
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;   
+    flex-wrap: wrap;
+}
+.hero-content{
+    flex: 1;
+    max-width: 600px;
+    padding: 20px;
+}
+.heading{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+.heading1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #44BEFF;
+    margin-bottom: 1rem;
+}
+.description{
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+.booking{
+    padding: 15px 20px;
+    background-color: #14ACFF;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.booking:hover{
+    background-color: #0056b3;
+}
+.image {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+}
+.hero-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  mix-blend-mode: multiply;
+}
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .image {
+    padding-top: 1rem;
+  }
+  .navigation-bar{
+    padding: 0 40px;
+    position: fixed;
+  }
+}
